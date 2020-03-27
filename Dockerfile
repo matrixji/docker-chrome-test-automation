@@ -3,7 +3,7 @@ FROM fedora:latest
 RUN dnf -y install fedora-workstation-repositories dnf-plugin-config-manager && \
     dnf -y config-manager --set-enabled google-chrome && \
     dnf -y install \
-        google-chrome \
+        google-chrome-stable \
         chromedriver \
         python3 \
         python3-devel \
