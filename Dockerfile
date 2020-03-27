@@ -13,4 +13,7 @@ RUN dnf -y install fedora-workstation-repositories dnf-plugin-config-manager && 
 
 RUN pip3 install --no-cache-dir \
     robotframework \
-    robotframework-selenium2library
+    robotframework-selenium2library \
+    selenium \
+    pytest \
+    pytest-html
