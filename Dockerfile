@@ -8,6 +8,10 @@ RUN dnf -y install fedora-workstation-repositories dnf-plugin-config-manager && 
         python3 \
         python3-devel \
         python3-pip \
+        wqy-bitmap-fonts \
+        wqy-zenhei-fonts \
+        wqy-unibit-fonts \
+        wqy-microhei-fonts \
         && \
     dnf clean all
 
@@ -16,4 +20,5 @@ RUN pip3 install --no-cache-dir \
     robotframework-selenium2library \
     selenium \
     pytest \
-    pytest-html
+    pytest-html \
+    pyyaml
